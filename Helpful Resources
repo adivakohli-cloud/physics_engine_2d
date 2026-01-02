@@ -1,0 +1,14 @@
+A YouTube video which provided the inspiration for taking up this project: https://youtu.be/nXrEX6j-Mws?si=wbigb3Hsfp8bxw6Y
+
+Primary inspiration for impulse-based collision resolution and constraints:
+https://box2d.org/documentation/
+https://box2d.org/posts/
+
+Semi-implicit(symplectic) Euler method: https://en.wikipedia.org/wiki/Semi-implicit_Euler_method
+Impulse-based collision resolution: https://en.wikipedia.org/wiki/Collision_response#Impulse-based_method
+
+Spring-mass systems and damped SHM:
+https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_(OpenStax)/16%3A_Oscillatory_Motion_and_Waves/16.07%3A_Damped_Harmonic_Motion
+https://en.wikipedia.org/wiki/Damping
+
+Pygame documentation: https://www.pygame.org/docs/
