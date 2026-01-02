@@ -200,6 +200,7 @@ These were intentionally excluded to keep the project basic and focused.
 
 ## Conclusion
 
-This project demonstrates a complete **2D physics engine pipeline**, including rigid body dynamics, collision handling, constraints, and rendering. It serves as a strong foundation for understanding real-world game physics engines and provides a base for further experimentation and optimization.
+This project demonstrates a complete 2D physics engine pipeline, including rigid body dynamics, collision handling, constraints, and rendering. It serves as a strong foundation for understanding real-world game physics engines and provides a base for further experimentation and optimization.
+
 
 ---
