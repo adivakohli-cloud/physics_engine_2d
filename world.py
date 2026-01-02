@@ -22,7 +22,7 @@ class World:
         dt_sub = dt / self.substeps
 
         for _ in range(self.substeps):
-            # 1️⃣ APPLY FORCES
+            #  APPLY FORCES
             for b in self.bodies:
                 if b.inv_mass == 0:
                     continue
@@ -33,13 +33,13 @@ class World:
             for s in self.springs:
                 s.apply()
 
-            # 2️⃣ INTEGRATE VELOCITY & POSITION
+            #  INTEGRATE VELOCITY & POSITION
             # CRITICAL FIX: This now calls the Body's integrate method
             # so that damping (air resistance/rolling friction) is applied.
             for b in self.bodies:
                 b.integrate(dt_sub)
 
-            # 3️⃣ COLLISION SOLVER (ITERATIVE)
+            #  COLLISION SOLVER (ITERATIVE)
             for _ in range(self.iterations):
                 MAX_ANG_VEL = 50
 
@@ -70,5 +70,6 @@ class World:
                 for c in self.constraints:
                     c.solve()
 
-            # 4️⃣ Remove broken constraints
+            #  Remove broken constraints
+
             self.constraints = [c for c in self.constraints if not hasattr(c, "broken") or not c.broken]
